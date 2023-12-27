@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Solar System Explorer</title>
+</head>
+<body>
+
+<div class="header">
+    <h1>Welcome to the Solar System Explorer</h1>
+</div>
+
+<div class="planet-container">
+    {% for planet in planets %}
+        <div class="planet-card">
+            <img src="{{ planet.image_url }}" alt="{{ planet.name }}">
+            <h2>{{ planet.name }}</h2>
+            <p>{{ planet.description }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
