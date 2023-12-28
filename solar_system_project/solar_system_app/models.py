@@ -7,3 +7,7 @@ class Planet(models.Model):
     order_from_sun = models.IntegerField()
     description = models.TextField()
     image_url = models.URLField()
+    radius = models.IntegerField()
+
+    def __str__(self):
+        return self.name
