@@ -1,0 +1,5 @@
+Include solar_systems_app in solar_systems_project settings.py to make Migrations
+ - python manage.py makemigrations
+ - python manage.py migrate
+
+ Create templates folder app directory
