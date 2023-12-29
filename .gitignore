@@ -7,3 +7,7 @@ __pycache__/
 # Ignore the virtual environment directory
 .venv/
 .DS_Store
+
+# IDE specific files
+.idea/
+.vscode/
